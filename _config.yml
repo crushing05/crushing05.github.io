@@ -1,0 +1,7 @@
+    lsi:         false
+    highlighter:  rouge
+    permalink:   date
+    name: Clark Rushing
+    description: crushing05.github.io
+    url: http://crushing05.github.io
+    safe: true
