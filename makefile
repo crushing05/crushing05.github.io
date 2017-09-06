@@ -1,13 +1,12 @@
-all:	server-auto
+
 
 cv:
-	tail +7 cv-pandoc.md > cv-body.md
+	tail +19 cv-pandoc.md > cv-body.md
 	pandoc -S cv-body.md -o cv-body.tex
 	perl -p -i -e "s/~/\\\ /g" cv-body.tex
-	perl -p -i -e "s/M.Sc./M.Sc.\\\/g" cv-body.tex
-	perl -p -i -e "s/B.Sc./B.Sc.\\\/g" cv-body.tex
-	# perl -p -i -e "s/itemsep1pt/itemsep3pt/g" cv-body.tex
-	latexmk -pdf RushingCV.tex
+	perl -p -i -e "s/‐/-/g" cv-body.tex
+	perl -p -i -e "s/itemsep1pt/itemsep3pt/g" cv-body.tex
+	latexmk RushingCV.tex
 	pandoc cv-body.md -o cv-body-clean.md
 	cat cv-header.txt cv-body-clean.md > RushingCV.txt
 	perl -p -i -e "s/–/--/g" RushingCV.txt
@@ -27,11 +26,7 @@ docx:
 latex2rtf:
 	latex2rtf RushingCV.tex
 
-server:
-	jekyll serve
 
-server-auto:
-	jekyll serve --watch
 
 local:
 	jekyll build
