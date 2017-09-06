@@ -3,7 +3,7 @@ layout: default
 title: crushing05.github.io
 ---
 
-<img src="images/headshot.jpg" alt="Headshot" width="321" height="210" class="headshot"/>  
+<img src="images/PABU.jpeg" alt="PABU" width="210" height="210" class="headshot"/>  
 
 I am a quantitative ecologist with a focus on the ecology and conservation of migratory birds. Currently, I am a postdoctoral fellow with the US Geological Survey at the Patuxent Wildlife Research Center. Previous to this position, I held the George Didden and [James Smithson] postdoctoral fellowships at the [Smithsonian Migratory Bird Center]. 
 
